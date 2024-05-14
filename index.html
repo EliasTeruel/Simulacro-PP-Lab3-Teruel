@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="./styles/normalize.css" />
+  <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="stylesheet" href="./styles/form.css" />
+
+  <!-- <link rel="icon" type="image/x-icon" href="assets/images/logo.svg" /> -->
+
+  <script src="./js/index.js" type="module"></script>
+
+  <title>Simulacro PP</title>
+</head>
+
+<body>
+  <header class="flex">
+    <div class="navegacion flex">
+      <!-- <img src="./assets/images/logo.svg" alt="Logo Principal" /> -->
+
+      <nav>
+        <ul class="flex">
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Anuncio</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <h1>Administracion</h1>
+  </header>
+
+  <div class="container-sections">
+    <section>
+      <form action="" method="post" id="form-item">
+        <input type="number" name="id" id="id" hidden />
+
+
+        <div class="form-group">
+          <label for="titulo">Titulo:</label>
+          <input type="text" required name="titulo" id="titulo" placeholder="Ingrese Titulo.." />
+        </div>
+
+        <div class="form-group" id="transaccion">
+            <label for="transaccion" class="transaccion">Transacción:</label>
+            <label for="Venta">Venta</label>
+            <input type="radio" name="Venta"  value="Venta" />
+            <label for="alquiler">alquiler</label>
+            <input type="radio" name="alquiler"  value="alquiler" />
+          </div>
+
+        <div class="form-group">
+          <label for="texto">Descripción:</label>
+          <textarea name="texto" id="descripcion" rows="2" cols="50"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="precio">Precio:</label>
+          <input type="number" required name="precio" id="precio" placeholder="Ingrese Precio.." />
+        </div>
+
+        <div class="form-group">
+            <input type="number" required name="puertas" id="puertas" value="puertas" placeholder="Puertas" />
+          </div>
+
+          <div class="form-group">
+            <input type="number" required name="kms" id="kms" value="kms" placeholder="KMs" />
+          </div>
+
+          <div class="form-group">
+            <input type="number" required name="potencia" id="potencia" values="potencia" placeholder="Potencia" />
+          </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn">Guardar</button>
+        </div>
+      </form>
+
+      <br /><br /><br /><br /><br />
+      <div class="container-options">
+
+        <input type="text" cass="container-ingreso-id" name="option-ID" id="ID" placeholder="Ingrese ID" />
+
+        <div class="container-btn-modifica">
+          <button type="button" id="btn-modifica" class="btn">modificar por ID</button>
+        </div>
+        <div class="container-btn-delete">
+          <button type="button" id="btn-delete" class="btn">Borrar por ID</button>
+        </div>
+        <div class="container-btn-delete-all">
+          <button type="button" id="btn-delete-all" class="btn">Borrar Todo</button>
+        </div>
+
+      </div>
+
+      <div class="container-table flex">
+        <table id="table-items" class="table-items table-stripped flex">
+          <thead>
+            <tr class="flex">
+              <th>ID</th>
+              <th>Titulo</th>
+              <th>Transacción</th>
+              <th>Descripción</th>
+              <th>Precio</th>
+              <th>Puertas</th>
+              <th>KMs</th>
+              <th>Potencia</th>
+            </tr>
+          </thead>
+
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+  <div id="spinner" class="spinner">
+    <img src="./assets/fonts/images/autito.png" alt="Spinner" class="spinner-img">
+  </div>
+
+  <footer class="flex">
+    <nav>
+      <ul class="flex">
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Anuncio</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <p>Todos los derechos reservados <date>2021</date> &copy;</p>
+  </footer>
+
+
+<div></div>
+
+
+
+
+</body>
+
+</html>
